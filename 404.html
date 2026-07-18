@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | Bake Bliss by Gurpreet</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .error-page{
+    min-height: 100vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding: 40px 24px;
+    background: linear-gradient(160deg, var(--warm-white) 0%, var(--pink-soft) 55%, var(--beige) 100%);
+  }
+  .error-code{ font-family: var(--font-display); font-size: clamp(5rem, 18vw, 9rem); color: var(--rose-gold); line-height:1; }
+  .error-page h1{ font-family: var(--font-display); font-size: 1.8rem; margin: 12px 0 16px; }
+  .error-page p{ color: var(--text-soft); max-width: 460px; margin-bottom: 30px; }
+</style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-code">404</div>
+    <h1>Oops! This slice isn't on the menu.</h1>
+    <p>The page you're looking for may have been moved, renamed, or doesn't exist. Let's get you back to something sweet.</p>
+    <a href="index.html" class="btn btn-primary btn-lg">Back to Home</a>
+  </div>
+</body>
+</html>

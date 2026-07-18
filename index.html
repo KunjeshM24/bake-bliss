@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bake Bliss by Gurpreet | Luxury Custom Cakes &amp; Bakery in Khargone</title>
+<meta name="description" content="Bake Bliss by Gurpreet — a home bakery in Khargone, MP crafting luxury birthday cakes, wedding cakes, bento cakes, cupcakes, brownies &amp; cookies. Handcrafted with love, made fresh to order.">
+<meta name="keywords" content="Bake Bliss by Gurpreet, bakery Khargone, custom cakes, wedding cakes, bento cake, birthday cake, home bakery Madhya Pradesh">
+<meta name="author" content="Bake Bliss by Gurpreet">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bakeblissbygurpreet.netlify.app/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bake Bliss by Gurpreet | Luxury Custom Cakes &amp; Bakery">
+<meta property="og:description" content="Handcrafted luxury cakes, cupcakes, brownies &amp; cookies — baked fresh with love in Khargone, MP.">
+<meta property="og:image" content="assets/images/og-cover.jpg">
+<meta property="og:url" content="https://bakeblissbygurpreet.netlify.app/">
+<meta property="og:site_name" content="Bake Bliss by Gurpreet">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bake Bliss by Gurpreet | Luxury Custom Cakes &amp; Bakery">
+<meta name="twitter:description" content="Handcrafted luxury cakes, cupcakes, brownies &amp; cookies — baked fresh with love in Khargone, MP.">
+<meta name="twitter:image" content="assets/images/og-cover.jpg">
+
+<!-- Favicon: REPLACE assets/icons/favicon.ico with your logo mark -->
+<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Bake Bliss by Gurpreet",
+  "image": "assets/images/og-cover.jpg",
+  "@id": "https://bakeblissbygurpreet.netlify.app/",
+  "url": "https://bakeblissbygurpreet.netlify.app/",
+  "telephone": "+91-00000-00000",
+  "priceRange": "₹1–₹200 per person",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Opposite Anaj Mandi, Vishwasakha Colony",
+    "addressLocality": "Khargone",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "451002",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "21.8237",
+    "longitude": "75.6103"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00",
+    "closes": "23:00"
+  }],
+  "sameAs": [
+    "https://www.instagram.com/_bakebliss___/"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "12"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loading-screen">
+    <img
+        src="assets/images/loading-screen.png"
+        alt="Bake Bliss Loading"
+        class="loading-image"
+    />
+</div>
+
+<!-- ============ CUSTOM CURSOR (desktop only) ============ -->
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<!-- ============ COOKIE NOTICE ============ -->
+<div class="cookie-notice" id="cookie-notice" role="dialog" aria-live="polite">
+  <img src="assets/images/cookie.png" alt="" class="cookie-notice-icon" aria-hidden="true">
+  <p>We use cookies to sweeten your browsing experience. 🍪 By continuing, you agree to our
+    <a href="privacy.html">Privacy Policy</a>.</p>
+  <button id="cookie-accept" class="btn-small">Accept</button>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="logo">
+      <span class="logo-script">Bake Bliss</span>
+      <span class="logo-sub">by Gurpreet</span>
+    </a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#cakes">Cakes</a>
+      <a href="#signature">Signature</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#process">Order Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-primary btn-ripple">Order Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#cakes">Cakes</a>
+  <a href="#signature">Signature</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#about">About</a>
+  <a href="#process">Order Process</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-primary">Order Now</a>
+</div>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-background" aria-hidden="true">
+    <svg class="hero-wave" viewBox="0 0 1200 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,220 C220,300 420,120 660,160 C840,190 960,104 1200,80 L1200,500 L0,500 Z" fill="#ffffff" />
+    </svg>
+    <svg class="hero-peach-blob" viewBox="0 0 400 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M52,213 C24,152 57,90 128,69 C198,48 296,64 332,118 C368,172 365,253 317,301 C269,349 169,364 106,327 C43,290 80,274 52,213 Z" fill="#F9C3A8" />
+    </svg>
+    <svg class="hero-pink-blob" viewBox="0 0 300 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M35,168 C18,108 51,60 108,42 C165,24 242,51 255,106 C268,161 240,206 195,237 C150,268 92,276 50,238 C8,200 52,228 35,168 Z" fill="#F6B4C1" />
+    </svg>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-grid">
+      <div class="hero-image-wrap fade-left">
+        <img class="hero-image" src="assets/images/cookie_box.jpeg" alt="BakeBliss cookie box" loading="eager">
+      </div>
+
+      <div class="hero-copy fade-up">
+        <p class="hero-intro">We’re</p>
+        <h1 class="hero-title">
+          <span class="hero-title-script">BakeBliss</span>
+          <span class="hero-title-label">Shop.</span>
+        </h1>
+        <p class="hero-description">An online bakery specializing in handcrafted cakes, cookies, and desserts based out of Khargone.</p>
+        <a href="#cakes" class="btn hero-button btn-ripple">
+          <span>Explore Our Menu</span>
+          <span class="hero-button-divider"></span>
+          <span class="hero-button-icon">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWS HIGHLIGHT ============ -->
+<section class="section section-alt news-line" aria-label="In the news">
+  <div class="container news-line-inner">
+    <p class="eyebrow center">Bake Bliss in the News:</p>
+    <div class="news-grid fade-up">
+      <article class="news-item">
+        <h3>Khargone Times</h3>
+        <p>"Best Local Bakery 2023"</p>
+      </article>
+      <article class="news-item">
+        <h3>Foodie India</h3>
+        <p>"Hidden Gem Spotlight"</p>
+      </article>
+      <article class="news-item">
+        <h3>Daily Bliss</h3>
+        <p>"The Cookie Queen of M.P."</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED SHOWCASE ============ -->
+<section class="floating-showcase" id="featured-showcase" aria-label="Featured Cakes Showcase">
+  <div class="showcase-decorations" aria-hidden="true">
+    <span class="decoration-icon dec-1">🧁</span>
+    <span class="decoration-icon dec-2">🍒</span>
+    <span class="decoration-icon dec-3">🎂</span>
+    <span class="decoration-icon dec-4">🍪</span>
+    <span class="decoration-icon dec-5">✨</span>
+    <span class="decoration-icon dec-6">💗</span>
+    <span class="decoration-icon dec-7">🌟</span>
+    <span class="decoration-icon dec-8">🥄</span>
+  </div>
+
+  <div class="showcase-content fade-up">
+    <p class="showcase-label">Premium Collection</p>
+    <h2 class="showcase-title">Crafted For Every Celebration</h2>
+    <p class="showcase-description">Handcrafted cakes made fresh every day for birthdays, weddings, anniversaries and unforgettable moments.</p>
+  </div>
+
+  <!-- Full-width image, no card/box styling -->
+  <div class="showcase-image-wrapper fade-up">
+    <img src="assets/images/showcase-cakee.png" alt="Signature drip cakes" class="showcase-image" loading="lazy" />
+  </div>
+
+  
+</section>
+
+
+
+<!-- ============ 2. FEATURED CAKES ============ -->
+<section class="section" id="cakes">
+  <div class="container">
+    <!-- <p class="eyebrow center fade-up">Our Menu</p> -->
+    <h2 class="section-title center fade-up">Featured Creations</h2>
+    <p class="section-sub center fade-up">Six ways to say "made with bliss" — pick your favourite, or let us surprise you.</p>
+
+    <div class="card-grid">
+      <article class="cake-card fade-up">
+        <div class="cake-card-img">
+          <!-- REPLACE with real photo -->
+          <img src="assets/images/cake-birthday.png" alt="Elegant birthday cake with floral piping" loading="lazy" width="400" height="400">
+        </div>
+        <h3>Birthday Cakes</h3>
+        <p>Whimsical, personalised and picture-perfect — designed to make their day unforgettable.</p>
+      </article>
+
+      <article class="cake-card fade-up">
+        <div class="cake-card-img">
+          <img src="assets/images/cake-wedding.png" alt="Tiered white wedding cake with gold detailing" loading="lazy" width="400" height="400">
+        </div>
+        <h3>Wedding Cakes</h3>
+        <p>Elegant tiered masterpieces crafted to match your love story, one layer at a time.</p>
+      </article>
+
+      <article class="cake-card fade-up">
+        <div class="cake-card-img">
+          <img src="assets/images/cake-bento.png" alt="Cute mini bento cake with pastel writing" loading="lazy" width="400" height="400">
+        </div>
+        <h3>Bento Cakes</h3>
+        <p>Mini, mighty and made for one — the sweetest little indulgence for solo celebrations.</p>
+      </article>
+
+      <article class="cake-card fade-up">
+        <div class="cake-card-img">
+          <img src="assets/images/cupcakes.png" alt="Assorted frosted cupcakes with sprinkles" loading="lazy" width="400" height="400">
+        </div>
+        <h3>Cupcakes</h3>
+        <p>Bite-sized bliss in a box — perfect for parties, favours, or a little treat-yourself moment.</p>
+      </article>
+
+      <article class="cake-card fade-up">
+        <div class="cake-card-img">
+          <img src="assets/images/brownies.png" alt="Fudgy chocolate brownies stacked" loading="lazy" width="400" height="400">
+        </div>
+        <h3>Brownies</h3>
+        <p>Rich, fudgy and impossibly decadent — baked in small batches for maximum gooeyness.</p>
+      </article>
+
+      <article class="cake-card fade-up">
+        <div class="cake-card-img">
+          <img src="assets/images/cookies-box.png" alt="Assorted handmade decorated cookies" loading="lazy" width="400" height="400">
+        </div>
+        <h3>Cookies</h3>
+        <p>Crisp edges, soft centres, hand-decorated with care — a classic, done Bake Bliss style.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UPCOMING EVENTS ============ -->
+<section class="events-section" id="upcoming-events" aria-label="Upcoming Events">
+  <svg class="events-wave" viewBox="0 0 1600 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M0,180 C400,60 700,260 1000,150 C1300,50 1500,140 1600,120 L1600,400 L0,400 Z" fill="#FFD5E5"></path>
+  </svg>
+
+  <div class="container events-grid">
+    <div class="events-image fade-up">
+      <img src="assets/images/cookie_stack.png" alt="Stack of chocolate butter cookies" loading="lazy" class="cookie-float" />
+    </div>
+
+    <div class="events-content fade-up">
+      <h2 class="events-title">Upcoming Events</h2>
+      <p class="events-description">For the latest pop-ups, bake sales, and events, follow us on Instagram!</p>
+      
+        
+      <a href="https://www.instagram.com/_bakebliss___/"
+        class="gram-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Do It For The 'Gram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. SIGNATURE COLLECTION ============ -->
+<section class="section section-alt" id="signature">
+  <div class="container">
+    <!-- <p class="eyebrow center fade-up">Handpicked For You</p> -->
+    <h2 class="section-title center fade-up">The Signature Collection</h2>
+    <p class="section-sub center fade-up">Our most-loved, most-requested, most-photographed creations.</p>
+
+    <div class="signature-grid">
+      <article class="signature-card fade-left">
+        <img src="assets/images/signature-1.png" alt="Rose gold drip celebration cake" loading="lazy" width="600" height="500">
+        <div class="signature-content">
+          <span class="tag">Bestseller</span>
+          <h3>The Rose Gold Drip</h3>
+          <p>A show-stopping chocolate ganache drip cake finished with edible rose-gold accents. Our most requested design for milestone birthdays.</p>
+          <a href="#contact" class="link-arrow">Enquire Now →</a>
+        </div>
+      </article>
+
+      <article class="signature-card fade-right">
+        <img src="assets/images/signature-2.png" alt="Pastel floral wedding cake tier" loading="lazy" width="600" height="500">
+        <div class="signature-content">
+          <span class="tag">Editor's Pick</span>
+          <h3>Blush &amp; Bloom</h3>
+          <p>Hand-piped buttercream florals in soft blush tones — an heirloom-worthy centrepiece for weddings and anniversaries.</p>
+          <a href="#contact" class="link-arrow">Enquire Now →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. WHY CHOOSE US ============ -->
+<section class="section" id="why-us">
+  <div class="container">
+    <!-- <p class="eyebrow center fade-up">Our Promise</p> -->
+    <h2 class="section-title center fade-up">Why Choose Bake Bliss</h2>
+
+    <div class="promise-grid">
+      <div class="promise-card-wrap fade-up" style="--tilt: -2deg;">
+        <div class="promise-seal"><i class="fa-solid fa-wheat-awn"></i></div>
+        <div class="promise-card">
+          <h3>Fresh Ingredients</h3>
+          <p>Only the finest, freshest ingredients go into every bake — no shortcuts, ever.</p>
+        </div>
+      </div>
+      <div class="promise-card-wrap fade-up" style="--tilt: 1.5deg;">
+        <div class="promise-seal"><i class="fa-solid fa-heart"></i></div>
+        <div class="promise-card">
+          <h3>Made With Love</h3>
+          <p>Every cake is hand-crafted with genuine care, from first whisk to final touch.</p>
+        </div>
+      </div>
+      <div class="promise-card-wrap fade-up" style="--tilt: -1deg;">
+        <div class="promise-seal"><i class="fa-solid fa-palette"></i></div>
+        <div class="promise-card">
+          <h3>Custom Designs</h3>
+          <p>Have a vision? We'll bring it to life — fully personalised for your celebration.</p>
+        </div>
+      </div>
+      <div class="promise-card-wrap fade-up" style="--tilt: 1.8deg;">
+        <div class="promise-seal"><i class="fa-solid fa-house-chimney"></i></div>
+        <div class="promise-card">
+          <h3>Home Bakery</h3>
+          <p>Small-batch, home-baked goodness — the warmth of a kitchen, not a factory line.</p>
+        </div>
+      </div>
+      <div class="promise-card-wrap fade-up" style="--tilt: -1.6deg;">
+        <div class="promise-seal"><i class="fa-solid fa-gem"></i></div>
+        <div class="promise-card">
+          <h3>Premium Quality</h3>
+          <p>5.0★ on Google — quality & consistency our customers keep coming back for.</p>
+        </div>
+      </div>
+      <div class="promise-card-wrap fade-up" style="--tilt: 1.2deg;">
+        <div class="promise-seal"><i class="fa-solid fa-truck-fast"></i></div>
+        <div class="promise-card">
+          <h3>Delivery Available</h3>
+          <p>Doorstep delivery across Khargone, so your celebration never misses its centrepiece.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ 5. GALLERY ============ -->
+<section class="section section-alt" id="gallery">
+  <div class="container">
+    <!-- <p class="eyebrow center fade-up">Sweet Moments</p> -->
+    <h2 class="section-title center fade-up">Gallery</h2>
+    <p class="section-sub center fade-up">A little taste of what leaves our kitchen. Tap any image to take a closer look.</p>
+
+    <div class="masonry" id="masonry-gallery"></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">&times;</button>
+  <img src="" alt="" id="lightbox-img">
+</div>
+
+<!-- ============ 6. TESTIMONIALS ============ -->
+<section class="section testimonial-section" id="testimonials">
+  <img src="assets/images/blob-accent.webp" alt="" class="testimonial-blob" aria-hidden="true" />
+
+  <div class="container">
+    <!-- <p class="eyebrow center fade-up">Kind Words</p> -->
+    <h2 class="section-title center fade-up">Loved By Our Customers</h2>
+  </div>
+
+  <!-- Screen-reader accessible version (unique testimonials, no duplicates) -->
+  <ul class="sr-only">
+    <li>Priya S., verified customer: The cake looked even better in person than the pictures. Every detail was exactly what I asked for.</li>
+    <li>Ankit R., verified customer: Ordered a bento cake last minute and Gurpreet still made it feel so special.</li>
+    <li>Simran and Kabir, verified customers: Our wedding cake was a dream, elegant and delicious.</li>
+    <li>Meera K., birthday client: The custom fondant details on my son's dinosaur cake were incredible, he still talks about it.</li>
+    <li>Rohit T., repeat customer: Fastest turnaround for a last-minute order, and the taste never took a hit.</li>
+    <li>Anjali D., verified customer: Their red velvet is unlike anything else in Khargone, moist and perfectly balanced.</li>
+    <li>Devansh P., anniversary client: Booked six months ahead for our anniversary cake and it was worth every day of waiting.</li>
+    <li>Kavya and Arjun, wedding clients: From tasting to delivery, everything felt personal.</li>
+    <li>Neha S., event client: The macarons were the highlight of our entire event.</li>
+    <li>Vikram M., repeat customer: Five orders in, zero disappointments. Bake Bliss is our only stop now.</li>
+  </ul>
+
+  <!-- Visual animated marquee (decorative, mirrors the list above) -->
+  <div class="marquee-wrapper" aria-hidden="true">
+    <div class="marquee-row">
+      <div class="marquee-track marquee-track--left">
+        <div class="t-card card-md">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">The cake looked even better in person than the pictures! Every detail was exactly what I asked for.</p>
+          <div class="t-author"><div class="t-avatar">PS</div><div><p class="t-name">Priya S.</p><p class="t-role">Verified customer</p></div></div>
+        </div>
+        <div class="t-card card-lg">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Ordered a bento cake last minute and Gurpreet still made it feel so special. Soft, fresh, and beautifully decorated.</p>
+          <div class="t-author"><div class="t-avatar">AR</div><div><p class="t-name">Ankit R.</p><p class="t-role">Verified customer</p></div></div>
+        </div>
+        <div class="t-card card-sm">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Our wedding cake was a dream — exactly the vibe we wanted.</p>
+          <div class="t-author"><div class="t-avatar">SK</div><div><p class="t-name">Simran &amp; Kabir</p><p class="t-role">Wedding clients</p></div></div>
+        </div>
+        <div class="t-card card-md">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">The custom fondant details on my son's dinosaur cake were incredible — he still talks about it!</p>
+          <div class="t-author"><div class="t-avatar">MK</div><div><p class="t-name">Meera K.</p><p class="t-role">Birthday client</p></div></div>
+        </div>
+        <div class="t-card card-lg">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Fastest turnaround for a last-minute order, and the taste never took a hit.</p>
+          <div class="t-author"><div class="t-avatar">RT</div><div><p class="t-name">Rohit T.</p><p class="t-role">Repeat customer</p></div></div>
+        </div>
+        <!-- duplicate set for seamless loop -->
+        <div class="t-card card-md">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">The cake looked even better in person than the pictures! Every detail was exactly what I asked for.</p>
+          <div class="t-author"><div class="t-avatar">PS</div><div><p class="t-name">Priya S.</p><p class="t-role">Verified customer</p></div></div>
+        </div>
+        <div class="t-card card-lg">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Ordered a bento cake last minute and Gurpreet still made it feel so special. Soft, fresh, and beautifully decorated.</p>
+          <div class="t-author"><div class="t-avatar">AR</div><div><p class="t-name">Ankit R.</p><p class="t-role">Verified customer</p></div></div>
+        </div>
+        <div class="t-card card-sm">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Our wedding cake was a dream — exactly the vibe we wanted.</p>
+          <div class="t-author"><div class="t-avatar">SK</div><div><p class="t-name">Simran &amp; Kabir</p><p class="t-role">Wedding clients</p></div></div>
+        </div>
+        <div class="t-card card-md">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">The custom fondant details on my son's dinosaur cake were incredible — he still talks about it!</p>
+          <div class="t-author"><div class="t-avatar">MK</div><div><p class="t-name">Meera K.</p><p class="t-role">Birthday client</p></div></div>
+        </div>
+        <div class="t-card card-lg">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Fastest turnaround for a last-minute order, and the taste never took a hit.</p>
+          <div class="t-author"><div class="t-avatar">RT</div><div><p class="t-name">Rohit T.</p><p class="t-role">Repeat customer</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee-row">
+      <div class="marquee-track marquee-track--right">
+        <div class="t-card card-lg">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Their red velvet is unlike anything else in Khargone — moist, rich, perfectly balanced.</p>
+          <div class="t-author"><div class="t-avatar">AD</div><div><p class="t-name">Anjali D.</p><p class="t-role">Verified customer</p></div></div>
+        </div>
+        <div class="t-card card-sm">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Worth every day of waiting for our anniversary cake.</p>
+          <div class="t-author"><div class="t-avatar">DP</div><div><p class="t-name">Devansh P.</p><p class="t-role">Anniversary client</p></div></div>
+        </div>
+        <div class="t-card card-md">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">From tasting to delivery, everything felt personal — exactly what a home bakery should feel like.</p>
+          <div class="t-author"><div class="t-avatar">KA</div><div><p class="t-name">Kavya &amp; Arjun</p><p class="t-role">Wedding clients</p></div></div>
+        </div>
+        <div class="t-card card-lg">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">The macarons were the highlight of our entire event — guests kept asking where we ordered from.</p>
+          <div class="t-author"><div class="t-avatar">NS</div><div><p class="t-name">Neha S.</p><p class="t-role">Event client</p></div></div>
+        </div>
+        <div class="t-card card-sm">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Five orders in, zero disappointments.</p>
+          <div class="t-author"><div class="t-avatar">VM</div><div><p class="t-name">Vikram M.</p><p class="t-role">Repeat customer</p></div></div>
+        </div>
+        <!-- duplicate set for seamless loop -->
+        <div class="t-card card-lg">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Their red velvet is unlike anything else in Khargone — moist, rich, perfectly balanced.</p>
+          <div class="t-author"><div class="t-avatar">AD</div><div><p class="t-name">Anjali D.</p><p class="t-role">Verified customer</p></div></div>
+        </div>
+        <div class="t-card card-sm">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Worth every day of waiting for our anniversary cake.</p>
+          <div class="t-author"><div class="t-avatar">DP</div><div><p class="t-name">Devansh P.</p><p class="t-role">Anniversary client</p></div></div>
+        </div>
+        <div class="t-card card-md">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">From tasting to delivery, everything felt personal — exactly what a home bakery should feel like.</p>
+          <div class="t-author"><div class="t-avatar">KA</div><div><p class="t-name">Kavya &amp; Arjun</p><p class="t-role">Wedding clients</p></div></div>
+        </div>
+        <div class="t-card card-lg">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">The macarons were the highlight of our entire event — guests kept asking where we ordered from.</p>
+          <div class="t-author"><div class="t-avatar">NS</div><div><p class="t-name">Neha S.</p><p class="t-role">Event client</p></div></div>
+        </div>
+        <div class="t-card card-sm">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="t-text">Five orders in, zero disappointments.</p>
+          <div class="t-author"><div class="t-avatar">VM</div><div><p class="t-name">Vikram M.</p><p class="t-role">Repeat customer</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-image fade-left">
+      <img src="assets/images/founder.png" alt="Gurpreet, founder of Bake Bliss, holding a decorated cake" loading="lazy" width="500" height="600">
+      <div class="about-badge">5.0★ on Google · 12 Reviews</div>
+    </div>
+    <div class="about-content fade-right">
+      <p class="eyebrow">Our Story</p>
+      <h2 class="section-title">Meet <span class="script-accent">Gurpreet</span></h2>
+      <p>Bake Bliss began in a small home kitchen in Khargone with one simple belief: dessert should feel like a celebration in itself. What started as baking for friends and family soon turned into a bakery loved across the city.</p>
+      <p>Every cake that leaves our kitchen is made from scratch — no mixes, no shortcuts — just quality ingredients, careful technique, and an eye for detail that comes from genuinely loving what I do.</p>
+      <p>Today, Bake Bliss is proud to be rated 5.0★ by our customers, and every single order still gets the same personal attention as the very first one.</p>
+      <a href="#contact" class="link-arrow">Get In Touch →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. ORDERING PROCESS ============ -->
+<section class="section section-alt process-section" id="process">
+  <img src="assets/images/blob-accent.webp" alt="" class="process-blob process-blob-tl" aria-hidden="true" />
+  <img src="assets/images/blob-accent.webp" alt="" class="process-blob process-blob-br" aria-hidden="true" />
+
+  <div class="container">
+    <!-- <p class="eyebrow center fade-up">Simple &amp; Sweet</p> -->
+    <h2 class="section-title center fade-up">How To Order</h2>
+
+    <div class="process-path fade-up">
+      <div class="process-line"></div>
+      <div class="process-line-mobile"></div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-badge">01</div>
+          <div class="step-card">
+            <h3>Choose Cake</h3>
+            <p>Browse our menu or signature collection and pick the flavour &amp; design that speaks to you.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-badge">02</div>
+          <div class="step-card">
+            <h3>Customize</h3>
+            <p>Share your theme, colours, message and size — we'll tailor every detail to your celebration.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-badge">03</div>
+          <div class="step-card">
+            <h3>Confirm</h3>
+            <p>We confirm your design, date and price, then get straight to baking with care.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-badge">04</div>
+          <div class="step-card">
+            <h3>Delivered</h3>
+            <p>Freshly baked and beautifully packaged, delivered right to your doorstep on time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container faq-wrap">
+    <!-- <p class="eyebrow center fade-up">Good To Know</p> -->
+    <h2 class="section-title center fade-up">Frequently Asked Questions</h2>
+
+    <div class="accordion" id="accordion">
+      <div class="accordion-item fade-up">
+        <button class="accordion-head">
+          <span>How far in advance should I order?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body"><p>We recommend placing custom cake orders at least 3–4 days in advance. For wedding cakes and large events, 2–3 weeks' notice helps us plan the perfect design.</p></div>
+      </div>
+      <div class="accordion-item fade-up">
+        <button class="accordion-head">
+          <span>Do you offer eggless options?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body"><p>Yes! Most of our cakes, cupcakes and brownies are available in eggless versions — just let us know when you place your order.</p></div>
+      </div>
+      <div class="accordion-item fade-up">
+        <button class="accordion-head">
+          <span>Do you deliver outside Khargone?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body"><p>We currently deliver within Khargone and nearby areas. Message us on WhatsApp with your location and we'll confirm availability.</p></div>
+      </div>
+      <div class="accordion-item fade-up">
+        <button class="accordion-head">
+          <span>Can I get a fully customised design?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body"><p>Absolutely — send us your inspiration pictures, theme or colour palette and we'll design something unique for your celebration.</p></div>
+      </div>
+      <div class="accordion-item fade-up">
+        <button class="accordion-head">
+          <span>What payment methods do you accept?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body"><p>We accept UPI, bank transfer and cash on delivery for local orders. A small advance is required to confirm custom orders.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ============ 11. CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <!-- <p class="eyebrow center fade-up">Let's Talk</p> -->
+    <h2 class="section-title center fade-up">Get In Touch</h2>
+    <p class="section-sub center fade-up">Ready to order or still deciding? We'd love to help you plan the perfect bake.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info fade-left">
+        <a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="contact-icon icon-whatsapp"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M16.01 3C9.38 3 4 8.36 4 15c0 2.29.64 4.43 1.74 6.26L4 29l7.94-1.67A11.9 11.9 0 0 0 16.01 27C22.64 27 28 21.64 28 15S22.64 3 16.01 3Zm0 21.7c-1.98 0-3.83-.55-5.41-1.51l-.39-.23-4.71.99.99-4.6-.25-.4A9.63 9.63 0 0 1 6.3 15c0-5.35 4.36-9.7 9.71-9.7 5.34 0 9.7 4.35 9.7 9.7 0 5.35-4.36 9.7-9.7 9.7Zm5.31-7.26c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.76.94-.93 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43 0 1.43 1.04 2.82 1.19 3.01.15.19 2.05 3.13 4.97 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.11.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34Z"/></svg></span>
+          <span><strong>WhatsApp</strong><br>+91 00000 00000</span>
+        </a>
+        <a href="tel:+910000000000" class="contact-item">
+          <span class="contact-icon">📞</span>
+          <span><strong>Phone</strong><br>+91 00000 00000</span>
+        </a>
+        <a href="mailto:hello@bakeblissbygurpreet.com" class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <span><strong>Email</strong><br>hello@bakeblissbygurpreet.com</span>
+        </a>
+        <a href="https://www.instagram.com/_bakebliss___/" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="contact-icon icon-instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="#fff" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41-.56-.21-.96-.47-1.38-.89-.42-.42-.68-.82-.89-1.38-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.66.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.66 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.27.07-1.68.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.85 5.85 0 0 0-1.38-2.13A5.85 5.85 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg></span>
+          <span><strong>Instagram</strong><br>@_bakebliss___</span>
+        </a>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span><strong>Address</strong><br>Opposite Anaj Mandi, Vishwasakha Colony, Khargone, MP 451002</span>
+        </div>
+
+        <!-- Google Maps placeholder — replace src with your embed link -->
+        <div class="map-placeholder">
+          <iframe title="Bake Bliss location map" src="https://www.google.com/maps?q=Khargone,Madhya+Pradesh&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <form class="contact-form fade-right" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            <span class="form-error" id="err-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <span class="form-error" id="err-phone"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+          <span class="form-error" id="err-email"></span>
+        </div>
+        <div class="form-group">
+          <label for="cakeType">What are you looking for?</label>
+          <select id="cakeType" name="cakeType">
+            <option value="">Select an option</option>
+            <option value="Birthday Cake">Birthday Cake</option>
+            <option value="Wedding Cake">Wedding Cake</option>
+            <option value="Bento Cake">Bento Cake</option>
+            <option value="Cupcakes">Cupcakes</option>
+            <option value="Brownies">Brownies</option>
+            <option value="Cookies">Cookies</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about your celebration</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="form-error" id="err-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-ripple full-width">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 12. FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-script">Bake Bliss</span>
+      <span class="logo-sub">by Gurpreet</span>
+      <p>Handcrafted luxury cakes &amp; desserts, baked fresh with love in Khargone, Madhya Pradesh.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/_bakebliss___/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41-.56-.21-.96-.47-1.38-.89-.42-.42-.68-.82-.89-1.38-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.66.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.66 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.27.07-1.68.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.85 5.85 0 0 0-1.38-2.13A5.85 5.85 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+        </a>
+        <a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-whatsapp">
+          <svg viewBox="0 0 32 32" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M16.01 3C9.38 3 4 8.36 4 15c0 2.29.64 4.43 1.74 6.26L4 29l7.94-1.67A11.9 11.9 0 0 0 16.01 27C22.64 27 28 21.64 28 15S22.64 3 16.01 3Zm0 21.7c-1.98 0-3.83-.55-5.41-1.51l-.39-.23-4.71.99.99-4.6-.25-.4A9.63 9.63 0 0 1 6.3 15c0-5.35 4.36-9.7 9.71-9.7 5.34 0 9.7 4.35 9.7 9.7 0 5.35-4.36 9.7-9.7 9.7Zm5.31-7.26c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.76.94-.93 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43 0 1.43 1.04 2.82 1.19 3.01.15.19 2.05 3.13 4.97 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.11.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34Z"/></svg>
+        </a>
+        <a href="mailto:hello@bakeblissbygurpreet.com" aria-label="Email">✉</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <a href="#cakes">Cakes</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Stay Sweet — Join Our Newsletter</h4>
+      <p>Get updates on new designs, offers &amp; seasonal specials.</p>
+      <form id="newsletter-form" novalidate>
+        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+        <button type="submit" class="btn btn-primary btn-ripple">Subscribe</button>
+      </form>
+      <p class="form-success" id="newsletter-success"></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Bake Bliss by Gurpreet. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="rotating-cookie" aria-hidden="true">
+  <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <path id="cookie-path" d="M120,40 a78,78 0 1,1 -0.1,0" />
+    </defs>
+    <g class="cookie-rotate">
+      <image class="cookie-image" x="48" y="48" width="159" height="159" href="assets/images/cookie.png" preserveAspectRatio="xMidYMid meet" />
+      <text class="cookie-text">
+        <textPath href="#cookie-path" startOffset="52%" text-anchor="middle" side="left">ORDER YOUR <tspan class="cookie-keyword">COOKIES</tspan> NOW!</textPath>
+      </text>
+    </g>
+  </svg>
+</div>
+<a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="#fff" d="M16.01 3C9.38 3 4 8.36 4 15c0 2.29.64 4.43 1.74 6.26L4 29l7.94-1.67A11.9 11.9 0 0 0 16.01 27C22.64 27 28 21.64 28 15S22.64 3 16.01 3Zm0 21.7c-1.98 0-3.83-.55-5.41-1.51l-.39-.23-4.71.99.99-4.6-.25-.4A9.63 9.63 0 0 1 6.3 15c0-5.35 4.36-9.7 9.71-9.7 5.34 0 9.7 4.35 9.7 9.7 0 5.35-4.36 9.7-9.7 9.7Zm5.31-7.26c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.76.94-.93 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43 0 1.43 1.04 2.82 1.19 3.01.15.19 2.05 3.13 4.97 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.11.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34Z"/></svg>
+</a>
+<a href="https://www.instagram.com/_bakebliss___/" target="_blank" rel="noopener noreferrer" class="floating-btn instagram-btn" aria-label="Visit Instagram">
+  <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="#fff" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41-.56-.21-.96-.47-1.38-.89-.42-.42-.68-.82-.89-1.38-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.66.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.66 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.27.07-1.68.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.85 5.85 0 0 0-1.38-2.13A5.85 5.85 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+</a>
+<button id="back-to-top" class="floating-btn back-to-top" aria-label="Back to top">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-gpe+R5w5YcBRW2p+IYBgxPKepqnJlTD5HPTuQ/SJ2LtiV6BYv9pzdzc1UpxS/NdPVs3ZQqkQHgr2L5qvHqaP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+<script>
+(function () {
+  const galleryImages = [
+    { src: "assets/images/gallery-1.png",  full: "assets/images/gallery-1.jpg", alt: "Layered cake close up" },
+    { src: "assets/images/gallery-2.png",  full: "assets/images/gallery-2.jpg", alt: "Cupcake box arrangement" },
+    { src: "assets/images/gallery-3.png",  full: "assets/images/gallery-3.jpg", alt: "Bento cake with pastel writing" },
+    { src: "assets/images/gallery-4.png",  full: "assets/images/gallery-4.jpg", alt: "Brownie box stacked" },
+    { src: "assets/images/gallery-5.png",  full: "assets/images/gallery-5.jpg", alt: "Wedding cake detail shot" },
+    { src: "assets/images/gallery-6.png",  full: "assets/images/gallery-6.jpg", alt: "Decorated cookies flatlay" },
+    { src: "assets/images/gallery-7.png",  full: "assets/images/gallery-7.jpg", alt: "Birthday cake with candles" },
+   
+    { src: "assets/images/gallery-12.jpeg",full: "assets/images/gallery-8.jpg", alt: "Rose gold cake slice" },
+    { src: "assets/images/gallery-13.png", full: "assets/images/gallery-6.jpg", alt: "Decorated cookies flatlay" },
+    { src: "assets/images/gallery-14.png", full: "assets/images/gallery-7.jpg", alt: "Birthday cake with candles" },
+    { src: "assets/images/gallery-15.png", full: "assets/images/gallery-8.jpg", alt: "Rose gold cake slice" }
+  ];
+
+  const container = document.getElementById("masonry-gallery");
+  const GAP = 20; // keep in sync with the gap values in the CSS above
+
+  function getColumnCount() {
+    const w = window.innerWidth;
+    if (w >= 1024) return 4;
+    if (w >= 640) return 2;
+    return 1;
+  }
+
+  function loadImage(item) {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve({ ...item, ratio: img.naturalHeight / img.naturalWidth });
+      img.onerror = () => resolve({ ...item, ratio: 1 });
+      img.src = item.src;
+    });
+  }
+
+  async function buildMasonry() {
+    container.innerHTML = "";
+    const colCount = getColumnCount();
+    const columnWidth = (container.clientWidth - GAP * (colCount - 1)) / colCount;
+
+    const columns = [];
+    const heights = [];
+    for (let i = 0; i < colCount; i++) {
+      const col = document.createElement("div");
+      col.className = "masonry-col";
+      container.appendChild(col);
+      columns.push(col);
+      heights.push(0);
+    }
+
+    const loaded = await Promise.all(galleryImages.map(loadImage));
+
+    loaded.forEach((item) => {
+      const shortest = heights.indexOf(Math.min(...heights));
+      const renderedHeight = columnWidth * item.ratio;
+
+      const img = document.createElement("img");
+      img.src = item.src;
+      img.alt = item.alt;
+      img.loading = "lazy";
+      img.className = "masonry-item";
+      img.setAttribute("data-full", item.full);
+      img.style.height = renderedHeight + "px";
+
+      columns[shortest].appendChild(img);
+      heights[shortest] += renderedHeight + GAP;
+    });
+
+    const maxHeight = Math.max(...heights);
+    columns.forEach((col, i) => {
+      const shortfall = maxHeight - heights[i];
+      if (shortfall > 1 && col.lastElementChild) {
+        const lastImg = col.lastElementChild;
+        const currentHeight = parseFloat(lastImg.style.height);
+        lastImg.style.height = currentHeight + shortfall + "px";
+        lastImg.style.objectFit = "cover";
+      }
+    });
+  }
+
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(buildMasonry, 200);
+  });
+
+  window.addEventListener("DOMContentLoaded", buildMasonry);
+})();
+</script>
+</body>
+</html>

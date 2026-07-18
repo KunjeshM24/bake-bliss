@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+
+Sitemap: https://bakeblissbygurpreet.netlify.app/sitemap.xml
