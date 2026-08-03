@@ -1,4 +1,4 @@
-hi - kunjesh
+hi - kunjesh, parth
 # Bake Bliss by Gurpreet — Website
 
 A premium, fully responsive, vanilla HTML/CSS/JS landing page for **Bake Bliss by Gurpreet**,
