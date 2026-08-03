@@ -1,4 +1,4 @@
-hi I am kunjesh mahajan 
+hi I am kunjesh mahajan - founder of shipready
 # Bake Bliss by Gurpreet — Website
 
 A premium, fully responsive, vanilla HTML/CSS/JS landing page for **Bake Bliss by Gurpreet**,
