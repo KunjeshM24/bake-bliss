@@ -1,4 +1,4 @@
-Hello I am kunjesh mahajan - co-founder of shipready 
+Hello I am kunjesh mahajan - co-founder of shipready , Client buyed it for 10k
 # Bake Bliss by Gurpreet — Website
 
 A premium, fully responsive, vanilla HTML/CSS/JS landing page for **Bake Bliss by Gurpreet**,
