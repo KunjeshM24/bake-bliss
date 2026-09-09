@@ -1,4 +1,4 @@
-Hi I am kunjesh mahajan - co-founder of ShipReady - $1 billion startup 
+Hi I am kunjesh mahajan - co-founder of ShipReady - $1 Million startup 
 # Bake Bliss by Gurpreet — Website
 
 A premium, fully responsive, vanilla HTML/CSS/JS landing page for **Bake Bliss by Gurpreet**,
