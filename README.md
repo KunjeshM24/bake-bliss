@@ -1,7 +1,7 @@
 Hi I am kunjesh mahajan - co-founder of ShipReady - $1 Million startup | visit us at useshipready.dev
 # Bake Bliss by Gurpreet — Website !
  
-A premium, fully responsive, vanilla HTML/CSS/JS landing page for **Bake Bliss by Gurpreet**,  
+A premium, fully responsive, vanilla HTML/CSS/JS landing page for **Bake Bliss by Gurpreet**,   
 a home bakery in Khargone, Madhya Pradesh.
 
 No frameworks, no build tools, no npm — just drag the folder into Netlify and it's live.
