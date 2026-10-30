@@ -5,7 +5,7 @@ A premium, fully responsive, vanilla HTML/CSS/JS landing page for **Bake Bliss b
 a home bakery in Khargone, Madhya Pradesh.
   
 No frameworks, no build tools, no npm — just drag the folder into Netlify and it's live.class Tree {  // Euler tour: the subtree of x is tin[x] .. tout[x] - 1; LCA by a sparse table over the DFS order
-    final int[] parent, tin, tout, order;  // the root is its own parent; order: the nodes in DFS order
+    final int[] parent, tin, tout, order;  // the root is its own parent; order: the nodes in DFS order 
     final int[][] first;  // first[k][i]: the earliest parent among order[i .. i + 2^k - 1]
 
     Tree(int n, int[][] edges) {
